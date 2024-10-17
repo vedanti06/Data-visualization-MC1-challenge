@@ -19,3 +19,61 @@ Use visual analytics to analyze the available data and develop responses to the 
 2) Characterize any biases you identify in these news sources, with respect to their representation of specific people, places, and events. Give examples. 
 
 3) Given the data sources provided, use visual analytics to identify potential official and unofficial relationships among GASTech, POK, the APA, and Government. Include both personal relationships and shared goals and objectives. Provide evidence for these relationships.
+
+# Project structure:
+   kronos-incident/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   ├── networkLink.js
+│   ├── wordCloud.js
+│   ├── circularNetwork.js
+│   ├── timeline.js
+│   └── main.js
+├── data/
+│   ├── processed/
+│   │   ├── network-data.json
+│   │   ├── sentiment-data.json
+│   │   └── timeline-data.json
+│   └── raw/
+│       ├── news-articles/
+│       ├── email-headers/
+│       └── employee-resumes/
+└── python/
+    └── data_processing/
+        ├── preprocess.py
+        └── sentiment_analysis.py
+
+# Tech Stack
+Frontend Framework: Vanilla JavaScript
+Visualization Library: D3.js
+Styling: Tailwind CSS
+Data Processing: Python (preprocessing)
+
+# Features:
+Our solution provides multiple interactive visualizations:
+# 1. Network Link Model
+Interactive force-directed graph
+Organizational hierarchy visualization
+Communication pattern analysis
+Node sizing based on organizational importance
+Color-coded relationship indicators
+
+# 2. Word Cloud
+Dynamic term visualization
+Real-time updates based on selected articles
+Interactive sizing and coloring
+Automated stop word filtering
+
+# 3. Circular Network Graph
+News source relationship visualization
+Interactive arc selection
+Dynamic content updates
+Integrated word cloud generation
+
+# 4. Timeline Visualization
+Chronological event mapping
+Interactive date selection
+Relationship tracking over time
+
